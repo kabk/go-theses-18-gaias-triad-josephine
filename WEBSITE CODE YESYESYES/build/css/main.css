@@ -1,0 +1,265 @@
+@font-face {
+  font-family: CelticSky;
+  src: url(../../fonts/CelticSky.otf); }
+
+@font-face {
+  font-family: HelveticaNeue-Light;
+  src: url(../../fonts/HelveticaNeue-Light.otf); }
+
+html {
+  font-size: 1.2vw;
+  font-family: HelveticaNeue-Light; }
+
+body {
+  margin: 0; }
+
+*, div {
+  box-sizing: border-box; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+sup {
+  font-size: 0.6rem; }
+
+header {
+  z-index: 9;
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  font-family: CelticSky; }
+  header a {
+    text-decoration: none;
+    color: black; }
+  header .headerLink {
+    float: left;
+    position: absolute;
+    text-align: center; }
+  header .headerLink:nth-child(1) {
+    left: 0.5rem; }
+  header .headerLink:nth-child(2) {
+    left: 10.5rem; }
+  header .headerLink:nth-child(3) {
+    left: 28.5rem; }
+  header .headerLink:nth-child(4) {
+    right: 25.5rem; }
+  header .headerLink:nth-child(5) {
+    right: 15.5rem; }
+  header .headerLink:nth-child(6) {
+    right: 0.5rem; }
+
+#gradientHeaderUnder {
+  opacity: 0;
+  z-index: 9;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  padding: 0.5rem;
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none; }
+
+#gradientHeader {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 10;
+  pointer-events: none; }
+  #gradientHeader div {
+    float: left;
+    position: absolute;
+    height: 100%;
+    width: 16.666%;
+    float: left;
+    filter: blur(8px); }
+  #gradientHeader .grad {
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%); }
+  #gradientHeader div:nth-child(1) {
+    left: 0.5rem;
+    width: 10%; }
+  #gradientHeader div:nth-child(2) {
+    left: 10.5rem; }
+  #gradientHeader div:nth-child(3) {
+    left: 28.5rem;
+    width: 18%; }
+  #gradientHeader div:nth-child(4) {
+    right: 25.5rem; }
+  #gradientHeader div:nth-child(5) {
+    right: 15.5rem;
+    width: 8%; }
+  #gradientHeader div:nth-child(6) {
+    right: 0.5rem; }
+
+.title {
+  font-size: 8rem;
+  font-family: CelticSky;
+  text-align: center; }
+  .title .titleTxt {
+    transform: translate(0%, -50%);
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .title .subtitle {
+    font-family: HelveticaNeue-Light;
+    font-size: 1rem;
+    text-align: center; }
+  .title.longTitle {
+    font-family: HelveticaNeue-Light;
+    font-size: 2.1rem;
+    width: 40%;
+    text-align: left; }
+    .title.longTitle .titleTxt {
+      width: 80%;
+      margin-left: 10%; }
+
+.contentWrap {
+  padding-top: 6rem; }
+
+.normalText {
+  width: 50%;
+  margin-left: 25%;
+  font-size: 1.4rem;
+  padding-bottom: 1rem; }
+
+.columns .col {
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+  padding: 1rem; }
+
+.yellowShadow {
+  transition: 1.4s;
+  text-shadow: 0px 0px 10px #8c8c8c; }
+  .yellowShadow.flick {
+    text-shadow: 0px 0px 1px #8c8c8c; }
+
+.greenShadow {
+  transition: 1.4s;
+  text-shadow: 0px 0px 10px #b4ff00; }
+  .greenShadow.flick {
+    text-shadow: 0px 0px 1px #b4ff00; }
+
+.brownShadow {
+  transition: 1.4s;
+  text-shadow: 0px 0px 10px #954d00; }
+  .brownShadow.flick {
+    text-shadow: 0px 0px 1px #954d00; }
+
+.purpleShadow {
+  transition: 1.4s;
+  text-shadow: 0px 0px 10px #780aff; }
+  .purpleShadow.flick {
+    text-shadow: 0px 0px 1px #780aff; }
+
+.epiShadow {
+  transition: 1.4s;
+  text-shadow: 0px 0px 10px #8c8c8c; }
+  .epiShadow.flick {
+    text-shadow: 0px 0px 1px #8c8c8c; }
+
+.endLinkAct {
+  text-align: center; }
+
+.endLinkTitle {
+  font-family: CelticSky;
+  font-size: 1.7rem;
+  text-align: center; }
+
+.title.white {
+  color: black; }
+
+.staticColumns {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  padding-top: 4.5rem; }
+  .staticColumns.gardener ::-webkit-scrollbar {
+    width: 8px; }
+  .staticColumns.gardener ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    box-shadow: 0px 0px 7px #b4ff00;
+    margin-left: 3px; }
+  .staticColumns.cavewoman ::-webkit-scrollbar {
+    width: 8px; }
+  .staticColumns.cavewoman ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    box-shadow: 0px 0px 7px #954d00;
+    margin-left: 3px; }
+  .staticColumns.witch ::-webkit-scrollbar {
+    width: 8px; }
+  .staticColumns.witch ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    box-shadow: 0px 0px 7px #780aff;
+    margin-left: 3px; }
+  .staticColumns .sCol {
+    z-index: 110;
+    width: 33.3333%;
+    float: left;
+    height: 100%;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    resize: vertical;
+    font-size: 1.2rem; }
+    .staticColumns .sCol div {
+      padding: 0; }
+      .staticColumns .sCol div img {
+        width: 100%; }
+    .staticColumns .sCol video {
+      width: 100%;
+      opacity: 1 !important; }
+    .staticColumns .sCol .pad {
+      height: 5rem; }
+    .staticColumns .sCol.trippyGradientGreen div {
+      background-image: linear-gradient(to right, black 0%, #b4ff00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 1000%,100%; }
+    .staticColumns .sCol.trippyGradientBrown div {
+      background-image: linear-gradient(to right, black 0%, #954d00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 1000%,100%; }
+    .staticColumns .sCol.trippyGradientPurple div {
+      background-image: linear-gradient(to right, black 0%, #780aff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 1000%,100%; }
+
+#vidBG {
+  position: fixed;
+  z-index: -10; }
+  #vidBG video {
+    min-width: 100%;
+    min-height: 100%; }
+
+.axolotl {
+  border: 1px dashed white;
+  height: 100vh; }
+  .axolotl div {
+    width: 100%;
+    font-family: HelveticaNeue-Light;
+    font-size: 2.1rem;
+    margin-top: 50vh;
+    transform: translate(0, -50%); }
+  .axolotl img {
+    max-width: 60%; }
+
+.icon {
+  text-align: center; }
+  .icon img {
+    padding-top: 2px;
+    width: auto !important;
+    height: 40px; }

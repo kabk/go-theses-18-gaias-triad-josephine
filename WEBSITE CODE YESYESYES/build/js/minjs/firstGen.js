@@ -1,0 +1,1 @@
+"use strict";var firstGen=function(){for(var e=0;e<generationSpecimens;e++)DNA=generateDNA(),aDNA=generateADNA(),pushDNAtoDB(DNA,aDNA)},pushNewGen=function(e,n){for(var r=0;r<generationSpecimens;r++){var t=e[r],a=n[r];pushDNAtoDB(t,a)}};
